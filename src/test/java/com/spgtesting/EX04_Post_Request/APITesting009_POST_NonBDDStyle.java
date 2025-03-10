@@ -1,4 +1,4 @@
-package com.spgtesting.Ex03_Get_Request;
+package com.spgtesting.EX04_Post_Request;
 
 import io.qameta.allure.Description;
 import io.restassured.RestAssured;

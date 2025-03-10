@@ -31,7 +31,7 @@
                     <include name="test2_NonBDD_GET"/>
                 </methods>
             </class>
-            <class name="com.spgtesting.Ex03_Get_Request.APITesting009_POST_NonBDDStyle">
+            <class name="com.spgtesting.EX04_Post_Request.APITesting009_POST_NonBDDStyle">
                 <methods>
                     <include name="test_POST_NonBDDStyle_Create_Token"/>
                 </methods>
