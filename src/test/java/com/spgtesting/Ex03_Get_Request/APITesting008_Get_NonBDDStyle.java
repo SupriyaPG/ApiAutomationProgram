@@ -7,6 +7,7 @@ import io.restassured.specification.RequestSpecification;
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
+
 public class APITesting008_Get_NonBDDStyle {
 
     RequestSpecification r;
