@@ -14,7 +14,7 @@ public class APITesting010_Put_NonBDDStyle {
     @Test
     public void test_put_non_bdd()
     {
-        String token="85f81492f31f072";
+        String token="YWRtaW46cGFzc3dvcmQxMjM=";
         String bookingId="2035";
         String payloadPut="{\n" +
                 "    \"firstname\": \"MR.55\",\n" +
@@ -31,8 +31,8 @@ public class APITesting010_Put_NonBDDStyle {
         requestSpecification.baseUri("https://restful-booker.herokuapp.com");
         requestSpecification.basePath("/booking/"+bookingId);
         requestSpecification.contentType(ContentType.JSON);
-       // requestSpecification.cookie("Token",token);
-        requestSpecification.header("Authorization", "Bearer " + token);
+      //requestSpecification.cookie("Token",token);
+        requestSpecification.header("Authorization", "Basic " + token);
         requestSpecification.body(payloadPut).log().all();
 
         Response response=requestSpecification.when().put();

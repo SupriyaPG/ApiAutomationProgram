@@ -17,15 +17,15 @@ public class APITesting_012_Delete_NonBDDStyle {
     public void test_delete_nonBDD() {
 
 
-        String token = "85f81492f31f072";
+        String token = "YWRtaW46cGFzc3dvcmQxMjM=";
         String bookingId = "2107";
 
         RequestSpecification requestSpecification = RestAssured.given();
         requestSpecification.baseUri("https://restful-booker.herokuapp.com");
         requestSpecification.basePath("/booking/" + bookingId);
         requestSpecification.contentType(ContentType.JSON);
-        requestSpecification.cookie("Token",token);
-        //requestSpecification.header("Authorization", "Bearer " + token);
+       // requestSpecification.cookie("Token",token);
+        requestSpecification.header("Authorization", "Basic " + token);
        // requestSpecification.auth().basic("admin","password123");
 
         Response response = requestSpecification.when().delete();

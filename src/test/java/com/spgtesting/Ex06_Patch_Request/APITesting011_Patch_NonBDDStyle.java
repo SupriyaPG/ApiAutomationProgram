@@ -18,10 +18,10 @@ public class APITesting011_Patch_NonBDDStyle {
     @Test
     public void test_put_non_bdd()
     {
-        String token="e9d30ab92374876";
-        String bookingId="2107";
+        String token="YWRtaW46cGFzc3dvcmQxMjM=";
+        String bookingId="4795";
         String payloadPatch="{\n" +
-                "    \"firstname\" : \"Jame\",\n" +
+                "    \"firstname\" : \"Jami\",\n" +
                 "    \"lastname\" : \"Brown\"\n" +
                 "}";
 
@@ -31,10 +31,9 @@ public class APITesting011_Patch_NonBDDStyle {
         rs.contentType(ContentType.JSON);
         rs.body(payloadPatch).log().all();
 
-        rs.cookie("Token",token);
-        //rs.header("Authorization", "Bearer " + token);
+        //rs.cookie("Token",token);
+         rs.header("Authorization", "Basic " + token);
         //rs.auth().basic("admin","password123");
-
 
         r=rs.when().log().all().patch();
 
