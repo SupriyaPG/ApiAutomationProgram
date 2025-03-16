@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/Win/IdeaProjects/ApiAutomationProgram/src/test/java/com/spgtesting/Ex08_TestNGExamples/APITesting_15_Priority.java"><classes><class name="com.spgtesting.Ex08_TestNGExamples.APITesting_15_Priority"><methods><include name="t1"/><include name="t2"/><include name="t3"/></methods></class></classes></test></suite>
